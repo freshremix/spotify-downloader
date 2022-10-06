@@ -5,7 +5,7 @@ import traceback
 import concurrent.futures
 
 from pathlib import Path
-from yt_dlp import youtube_dl
+from ytmdl import yt-dlp
 from typing import List, Optional
 
 from spotdl.search import SongObject
@@ -171,7 +171,7 @@ class DownloadManager:
                 ytdl_format = "bestaudio"
 
             # download Audio from YouTube
-            audio_handler = YoutubeDL(
+            audio_handler = ytmdl(
                 {
                     "format": ytdl_format,
                     "outtmpl": f"{str(temp_folder)}/%(id)s.%(ext)s",

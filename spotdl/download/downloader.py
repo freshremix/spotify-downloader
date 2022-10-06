@@ -171,7 +171,7 @@ class DownloadManager:
                 ytdl_format = "bestaudio"
 
             # download Audio from YouTube
-            audio_handler = yt-dlp(
+            audio_handler = YoutubeDL(
                 {
                     "format": ytdl_format,
                     "outtmpl": f"{str(temp_folder)}/%(id)s.%(ext)s",
